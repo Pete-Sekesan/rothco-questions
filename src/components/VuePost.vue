@@ -2,9 +2,9 @@
   <div>
     <form @submit='postInput' method='post'>
       <label for= 'title'>Title</label><br>
-      <input type='text' name= 'title' > <br><br>
+      <input type='text' name= 'title' v-model='posts.title' > <br><br>
       <label for= 'body'>Body</label><br>
-      <input type='text' name= 'body'> <br><br>
+      <input type='text' name= 'body' v-model='posts.body'> <br><br>
       <button type='submit'>Submit</button>
 
     </form>
@@ -14,13 +14,19 @@
 <script>
 export default {
   name: 'PostForm',
-  data () {
-
+  data() {
+    return {
+    posts:{
+      title:null,
+      body: null
+    }
+    }
   },
   methods:{
-    postInput()
+    postInput(e)
     {
-
+      console.warn(this.posts)
+      e.preventDefault();
     }
   }
 };
