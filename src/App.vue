@@ -1,5 +1,6 @@
 <template>
   <h1>Testing</h1>
+  <PostForm/>
 </template>
 
 <script>
