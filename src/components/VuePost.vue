@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: VuePost,
+  name: 'PostForm',
 };
 </script>
