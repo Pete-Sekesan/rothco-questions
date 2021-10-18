@@ -1,15 +1,15 @@
 <template>
-  <h1>Testing</h1>
-  <PostForm/>
+
+  <CreatePost />
 </template>
 
 <script>
-import PostForm from './components/VuePost';
+import CreatePost from './components/CreatePost.vue'
 
 export default {
   name: 'App',
   components: {
-    PostForm,
+    CreatePost,
   },
 };
 </script>
